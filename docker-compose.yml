@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  test:
+    build: .
+    volumes:
+      - ./orig/config.prop:/opt/orig/config.prop:rw
+    image: test4vol
